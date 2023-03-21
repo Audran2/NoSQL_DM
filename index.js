@@ -1,11 +1,12 @@
 const { MongoClient, ObjectId } = require("mongodb");
-const express = require("express"),
-bodyParser = require("body-parser");
-let app = express();
-app.use(express.json());
-
 const url = "mongodb://localhost:27017";
 const port = 3000;
+
+const express = require("express");
+bodyParser = require("body-parser");
+let app = express();
+
+app.use(express.json());
 
 
 // Import des routes
